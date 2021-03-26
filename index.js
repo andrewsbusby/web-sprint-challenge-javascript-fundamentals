@@ -28,11 +28,11 @@ myFunction();
     
 For example, `summation(4)` should return 10 because 1+2+3+4 is 10. Note, you may use a for loop for this function if you wish */
 
-function summation(num1, num2){
- let sum = num1 + num2;
-  return sum;
+function summation(){
+ for(let i = 0; i < 4; i++);
+    console.log()
 }
-console.log(summation(5, 5));
+
  
 
 // 🦁🦁🦁 Topic 2: ADVANCED Array Methods 🦁🦁🦁
@@ -58,9 +58,14 @@ const zooAnimals = [
   */
 
   function animalNames(data){
-    
+    const displayNames = data.map(function(i){
+  let name = i.animal_name;
+  let scientific = i.scientific_name;
+      return `name: ${i.animal_name}, scientific: ${i.scientific_name}`;
+    })
+    return displayNames;
   }
-console.log(animalNames(zooAnimals));  
+  console.log(animalNames(zooAnimals));
 
   /* 🦁🦁🦁 Request 2: .map() 🦁🦁🦁
   The zoo needs a list of all their animal's names converted to lower case. 
@@ -86,9 +91,9 @@ console.log(lowerCaseNames(zooAnimals));
     const population = data.filter(function(item){
       return item.population < 5;
     });
-    console.log(population);
+    return population;
   }
-  lowPopulationAnimals(zooAnimals);
+  console.log(lowPopulationAnimals(zooAnimals));
   
 
   /* 🦁🦁🦁 Request 4: .reduce() 🦁🦁🦁
@@ -101,9 +106,9 @@ console.log(lowerCaseNames(zooAnimals));
     const newPop = data.reduce(function(acc, item){
       return acc + item.population
     }, 0);
-    console.log(newPop);
+    return newPop;
   }
- USApop(zooAnimals);
+ console.log(USApop(zooAnimals));
   
   // 🦁🦁🦁 Callbacks 🦁🦁🦁  
   /* 🦁🦁🦁 Step 1: Create a higher-order function 🦁🦁🦁
