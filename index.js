@@ -219,7 +219,8 @@ class CuboidMakerTwo{
     return volume;
   }
   surfaceArea(){
-    const surface = 2 * (this.length * this.widht + this.length * this.height + this.width * this.height);
+    const surface = 2 * (this.length * this.width + this.length * this.height + this.width * this.height);
+    return surface;
   }
 }
 
