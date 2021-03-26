@@ -16,7 +16,7 @@ function myFunction() {
 myFunction();
 
 //🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
-
+//Nested function can access internal because it is with in the scope of the function. It is able to reach up and grab it.  
 
 
 
